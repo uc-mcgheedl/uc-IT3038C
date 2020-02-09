@@ -6,4 +6,3 @@
 $IP = getIP
 
 write-host("This machines IP is $IP")
-write-host("This machines IP is {0}" -f $IP)
