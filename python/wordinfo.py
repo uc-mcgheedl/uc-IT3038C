@@ -15,3 +15,5 @@ for v in word:
 
 #prints out user's word information
 print("The total amount of letters is %s, the # of vowels is %d and the # of consonants is %a" %(len(word), vow, cons))        
+
+
