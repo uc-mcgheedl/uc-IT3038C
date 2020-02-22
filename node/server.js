@@ -14,6 +14,13 @@ if (req.url === "/"){
     }
     else if(req.url.match("/sysinfo")){
             myHostName=os.hostname();
+            totMem = os.totalmem() / 1000000;
+            freeMem = os.freemem() / 1000000;
+            cpuCount = os.cpus().length;
+            srvDay = os.uptime() / 86400;
+            srvHrs = ((os.uptime() % 86400) / 3600);
+            srvMin = (((os.uptime() % 86400) % 3600) / 60);
+            srvSec = ((os.uptime() % 86400) % 3600) % 60;
             html= `
             <!DOCTYPE html>
             <html>
@@ -25,9 +32,10 @@ if (req.url === "/"){
              <p>Welcome to my node site </p>
              <p>Hostname: ${myHostName}</p>
              <p>IP: ${ip.address()}</p>
-             <p>Server Uptime: </p>
-             <p>Total Memory:  </p>
-             <p>Free Memory: </p>
+             <p>Server Uptime: Days: ${srvDay.toFixed(0)}, Hours: ${srvHrs.toFixed(0)}, Minutes: ${srvMin.toFixed(0)}, Seconds: ${srvSec.toFixed(0)}</p>
+             <p>Total Memory: ${totMem} MB</p>
+             <p>Free Memory: ${freeMem} MB</p>
+             <p>CPU's: ${cpuCount}</p>
              </body>
              </html>`
              res.writeHead(200, {"Content-Type":"text/html"});
