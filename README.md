@@ -10,7 +10,7 @@ First we must install flashtext, so go to VSCode and open a powershell terminal 
 ```powershell
 pip install flashtext
 ```
-Now, that you have flashtext installed you can perform a multitude of keyword searches. Now in python run this code.
+Now that you have flashtext installed, you can perform a multitude of keyword searches. Now in python run this code.
 ```python
 from flashtext import KeywordProcessor
 keyword_processor = KeywordProcessor()
