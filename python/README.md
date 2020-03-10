@@ -20,4 +20,5 @@ Guess again: 46
 Great job! You guessed the number in 3 tries and in 5 seconds
 ```
 
-
+Known Errors : The first prompt to the user will correctly be error checked for negative numbers, but it will not catch any letters. But after the first prompt the try and except will display the proper error msg's.
+            
