@@ -5,7 +5,7 @@ import time
 num = random.randint(1, 99)
 print(num)
 
-# Starting the timer and user input prompt
+# Starting the timer 
 start = time.time()
 tries = 0
 
