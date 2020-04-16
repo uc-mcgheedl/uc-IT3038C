@@ -1,7 +1,7 @@
 import json
 import requests
 
-r = requests.get('http://localhost:3000/')
+r = requests.get('http://localhost:3000/api')
 data=r.json()
 
 widName0 = (data[0]['name'])
