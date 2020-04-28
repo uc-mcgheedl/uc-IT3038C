@@ -1,4 +1,4 @@
-#Importing packages
+#Importing modules
 import json
 import requests
 
