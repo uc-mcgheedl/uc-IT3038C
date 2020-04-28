@@ -1,6 +1,6 @@
 # Project 3 Last FM Top Tracks
 
-Using the LastFM API, I am displaying LastFM's current top tracks. The details include ranking, artist name, track and LastFM track link.
+Using the LastFM API, I am displaying LastFM's current top tracks. The details include ranking, song plays, artist name, track and LastFM track link.
 
 To run, you simply click the run button in your preferred IDE or type this code in the console
 ```powershell
