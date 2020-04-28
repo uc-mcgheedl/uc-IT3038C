@@ -17,6 +17,6 @@ for i in data['tracks']['track']:
     pCount = i['playcount'] # Track play count
     tUrl = i['url'] # link to the song on lastFM
     counter += 1 # Counting top tracks
-    print('#%s  %s By %s Played %s Times \nSong Link: %s\n ' %(counter,artTrack,artName,pCount,tUrl)) #Printing top tracks
+    print('#%s  %s By %s - Played %s Times \nSong Link: %s\n ' %(counter,artTrack,artName,pCount,tUrl)) #Printing top tracks
     
   
